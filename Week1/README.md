@@ -119,25 +119,3 @@ Week1/
 | Tabular data | Pandas |
 | Visualization | Matplotlib |
 | Workflow | Jupyter Notebook, VS Code, Git & GitHub, Google Colab |
-
-## Notes & Best Practices
-
-- Every notebook must read like a short report: Markdown cells explaining each step, clean and documented code, and visible, reproducible outputs.
-- Fix a random seed wherever randomness is used so results are repeatable — this habit is required for every deliverable through the Phase 3 capstone project.
-- Run every code cell before committing so outputs are baked into the notebook, not left blank.
-
-## Evaluation Criteria
-
-Scored by the assigned mentor at the end of Week 1 (from the program's 100-point internal rubric):
-
-| Criterion | 50–69 Developing | 70–84 Proficient | 85–100 Excellent |
-|---|---|---|---|
-| Python code quality & notebook structure | Basic structure, some comments | Clean, readable, well-documented | Production-grade, fully reproducible |
-| NumPy / Pandas proficiency | Uses libraries with guidance | Manipulates arrays and DataFrames independently | Fluent; vectorizes and cleans data efficiently |
-| Data cleaning & correctness | Basic cleaning, some issues missed | Handles missing values and types correctly | Thorough, justified cleaning decisions |
-| Visualization quality | Unlabeled or unclear plots | Clear, labeled, appropriate plot types | Insightful plots that reveal real patterns |
-| Git workflow & documentation | Sporadic commits, weak notebook narrative | Regular commits, clear Markdown documentation | Consistent, descriptive, well-organized |
-| Attendance & punctuality | 3–6 absences | 1–2 absences, on time | Perfect attendance, proactive |
-
----
-*Prepared by BinX Tech — Palestine, Nablus*
