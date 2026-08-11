@@ -14,7 +14,9 @@ Compare training vs. validation F1-scores across different tree depths to unders
 
 week4/day3/
 │── Day3 week4.ipynb   # Jupyter notebook with code and analysis
+
 │── dataset/           # Telco Customer Churn dataset (CSV)
+
 │── README.md          # Documentation (this file)
 
 
