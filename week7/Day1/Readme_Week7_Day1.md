@@ -39,7 +39,14 @@ Week7/
 
 Chosen because it's a real, clinically-relevant binary classification task — consistent with the health-data theme of the Sprint 1 (stroke prediction) work — and matches the program's own guidance: *"if the Phase 3 project is the Image Classifier, transfer learning is almost always the right approach."*
 
-*Note: `DATA_DIR` in the notebook is a placeholder — update it to wherever you extract the Kaggle dataset (locally or after uploading/downloading via the Kaggle API in Colab).*
+**Dataset scale (confirmed):** 11,879 training images (6,289 Benign / 5,590 Malignant)
+and 2,000 test images (1,000 / 1,000, perfectly balanced) — downloaded in Colab via
+`kagglehub.dataset_download()`, extracted to
+`/kaggle/input/melanoma-skin-cancer-dataset-benign-vs-malignant`.
+
+Unlike Sprint 1's stroke dataset (~5% positive class), this dataset is close to
+balanced, so `class_weight` handling is not required here — plain binary
+cross-entropy and accuracy are both trustworthy for this project.
 
 ---
 
@@ -55,4 +62,4 @@ Chosen because it's a real, clinically-relevant binary classification task — c
 ---
 
 ## ✅ Key Takeaway
-A single 3×3 convolution filter needs about 116,000× fewer weights than a dense layer covering the same 128×128 image — parameter sharing is what makes CNNs computationally feasible on real image sizes, and translation invariance is what makes them effective regardless of where a pattern (like an irregular lesion border) appears in the frame. With the architecture decision recorded (CNN + transfer learning), Day 2 builds the actual network.
+A single 3×3 convolution filter needs about 116,508× fewer weights than a dense layer covering the same 128×128 image (1,048,576 vs. 9, confirmed in Step 3) — parameter sharing is what makes CNNs computationally feasible on real image sizes, and translation invariance is what makes them effective regardless of where a pattern (like an irregular lesion border) appears in the frame. With 11,879 training images across two well-balanced classes, and the architecture decision recorded (CNN + transfer learning), Day 2 builds the actual network.
